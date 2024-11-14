@@ -101,6 +101,54 @@ export const estilo = StyleSheet.create({
     
 })
 
+export const loginScreen = StyleSheet.create({
+    overall:{
+        display:"flex",
+        flex:1,
+        justifyContent:"center",
+        alignItems:"center",
+        backgroundColor:"rgb(27,27,27)",
+    },
+    titulo:{
+        color:"white",
+        fontWeight:"bold",
+        fontSize:30,
+        marginBottom:50,
+    },
+    entrada:{
+        color:"white",
+        borderBottomColor:"white",
+        borderBottomWidth:1,
+        paddingBottom:7,
+        paddingTop:7,
+        paddingRight:50,
+        paddingLeft:50,
+        fontSize:17,
+        marginBottom:40,
+    },
+
+    linearGradient: {
+        alignSelf: 'center',
+        borderRadius: 35,
+        height: 43,
+        width: 300,
+        justifyContent: 'center',
+    },
+
+    button:{
+        display:"flex",
+        backgroundColor: 'transparent',
+        borderRadius: 35,
+        borderColor: 'transparent',
+        alignItems: 'center',
+        alignSelf: 'center',
+        height: 50,
+        width: 300,
+        padding: 6,
+
+    }
+})
+
 export const HomeScreen = StyleSheet.create({
         Subtext: {
             paddingLeft: 10,
