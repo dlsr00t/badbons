@@ -5,15 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 
 const PerfilScreen = () => {
     return (
-        <SafeAreaView style={estilo2.background}>
-            <View style={estilo2.BuscaConatainer}>
-                <Text style={estilo2.title}>Meu Perfil</Text>
-                <TouchableOpacity style={estilo2.button}>
-                    <Text style={estilo2.buttonText}>Editar Perfil</Text>
-                </TouchableOpacity>
-                <Icon style={estilo2.iconLight} name="user" size={20} color="#909090" />
-            </View>
-        </SafeAreaView>
+        <Text>Perfil</Text>
     );
 };
 
