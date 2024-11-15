@@ -10,9 +10,11 @@ const LoginScreen = ({ navigation }) => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  const API_URL = "https://866f-189-84-180-8.ngrok-free.app";
+
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/login', {
+      const response = await axios.post(`${API_URL}/api/login`, {
         email,
         password,
       });

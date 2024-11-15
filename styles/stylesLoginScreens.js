@@ -172,38 +172,38 @@ export const HomeScreen = StyleSheet.create({
         BuscaConatainer:{
             flexDirection: 'row',
             alignSelf: "center",
-            height: 27,
+            height: 34,
             width: '90%',
             backgroundColor: '#272727',
             borderRadius: 10,
             alignItems: 'center',
-            paddingLeft: 10,
-            paddingRight: 10,
             top: 27
 
         },
         input:{
-            alignItems: 'center',
+            alignSelf: 'center',
             color: '#909090',
-            width: "60%",
+            width: "70%",
             height: 'auto',
             fontSize: 15,
+            top: 2,
+            paddingLeft: 5
         },
         iconBuscar:{
-            padding: 10
+            paddingLeft: 15
         },
         separator:{
             backgroundColor: '#343434',
             width: 1,
-            height: 27
+            height: 34
 
         },
         iconLight:{
-            padding: 15,
-            paddingLeft: 25
+            paddingLeft: 15
         },
         iconBell:{
-            alignself: 'right'
+            alignself: 'right',
+            paddingLeft: 20
         },
         font:{
           color:"rgb(144,144,144)",

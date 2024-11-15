@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <SafeAreaView style={HomeScreen.background}>
             <View style={HomeScreen.BuscaConatainer}>
-                <Icon style={HomeScreen.iconBuscar} name="search" size={14} color="#909090" />
+                <Icon style={HomeScreen.iconBuscar} name="search" size={12} color="#909090" />
                 <TextInput
                     style={HomeScreen.input}
                     placeholder="Pesquisa"
