@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 
 
-const Card = ({ Height = 135, Title, Percentage, TitleAlign = false, children, }) =>{
+const Card = ({ Height = 135, Title, Percentage, customStyle, children, }) =>{
     const styles = StyleSheet.create({
         cardStyle:{
             alignSelf: 'center',
@@ -23,8 +23,6 @@ const Card = ({ Height = 135, Title, Percentage, TitleAlign = false, children, }
             
         },
 
-    
-
     });
     
     return(
@@ -35,7 +33,7 @@ const Card = ({ Height = 135, Title, Percentage, TitleAlign = false, children, }
                 colors={["#010101", "#727272"]}
                 style={styles.cardStyle}
             >
-                <Text style={styles.cardTitle}>{ Title }</Text>
+                <Text style={[styles.cardTitle, customStyle]}>{ Title }</Text>
                 { Percentage }
 
                 <View>{ children }</View>

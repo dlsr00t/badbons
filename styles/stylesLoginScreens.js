@@ -1,5 +1,6 @@
 import { transform } from "@babel/core"
 import { StyleSheet } from "react-native"
+import DesafiosScreen from "../src/screen/DesafiosScreen"
 
 export const estilo = StyleSheet.create({
     background:{
@@ -256,6 +257,74 @@ export const SessoesScreenStyle = StyleSheet.create({
         fontSize:15,
         fontWeight:"100",
         marginLeft:15,
+        
+    }
+})
 
+export const RankingScreenStyle = StyleSheet.create({
+    background: {
+        backgroundColor: '#1c1c1e',
+        flex:1,
+    },
+    Title:{
+        color: "#fff",
+        fontSize: 35,
+        fontWeight:"500",
+        marginTop:10,
+        marginLeft:15,
+        marginBottom:13,
+        textAlign:"center",
+        
+    },
+    NormalText:{
+        color:"#fff",
+        fontSize:15,
+        fontWeight:"100",
+        marginLeft:20,
+        marginBottom:10
+    },
+    SubTitle:{
+
+        color:"#fff",
+        fontSize:18,
+        fontWeight:"100",
+        marginLeft:50,
+        transform:[{translateY:-68}],
+    },
+    FlexingStats:{
+        display:'flex',
+        flexDirection:"row",
+    }
+})
+
+export const DesafiosScreenStyle = StyleSheet.create({
+    background: {
+        backgroundColor: '#1c1c1e',
+        flex:1,
+    },
+    Title:{
+        color: "#fff",
+        fontSize: 35,
+        fontWeight:"100",
+        marginTop:10,
+        marginLeft:15,
+        marginBottom:13
+    },
+    SubTitile:{
+        display:"flex",
+        flexDirection:"row",
+        gap:25,
+        color:"#fff",
+        fontSize:18,
+        fontWeight:"100",
+        marginLeft:8,
+        marginBottom:10
+    },
+    NormalText:{
+        color:"#fff",
+        fontSize:15,
+        fontWeight:"100",
+        marginLeft:15,
+        
     }
 })
