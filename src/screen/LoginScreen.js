@@ -10,11 +10,9 @@ const LoginScreen = ({ navigation }) => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const API_URL = "https://866f-189-84-180-8.ngrok-free.app";
-
   const handleLogin = async () => {
     try {
-      const response = await axios.post(`${API_URL}/api/login`, {
+      const response = await axios.post('http://localhost:3000/api/login', {
         email,
         password,
       });
@@ -50,7 +48,7 @@ const LoginScreen = ({ navigation }) => {
         colors={['#4376e6', '#0233a1']}
         style={loginScreen.linearGradient}
       >
-        <TouchableOpacity style={loginScreen.button} onPress={handleLogin}>
+        <TouchableOpacity style={loginScreen.button} onPress={()=>navigation.navigate("HomeTabs")}>
           <Text style={{fontWeight:"bold",alignItems:"center",color:"white",fontSize:22}}>Entrar</Text>
         </TouchableOpacity>
       </LinearGradient>
