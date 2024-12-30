@@ -42,7 +42,7 @@ export const InitialScreen = ({ navigation }) => {
                     >
                         <TouchableOpacity 
                             style={estilo.button}
-                            onPress={() => navigation.navigate('Login')} // Navegar para a tela de Login
+                            onPress={() => navigation.navigate('HomeTabs')} // Navegar para a tela de Login
                         >
                             <Text style={estilo.buttonText}>Inicie seus treinos</Text>
                         </TouchableOpacity>
