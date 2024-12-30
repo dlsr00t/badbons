@@ -1,3 +1,4 @@
+import { transform } from "@babel/core"
 import { StyleSheet } from "react-native"
 
 export const estilo = StyleSheet.create({
@@ -216,5 +217,45 @@ export const HomeScreen = StyleSheet.create({
             justifyContent: 'center',
             top: 50
         },
+        linearGradientButton2: {
+            alignSelf: 'center',
+            borderRadius: 25,
+            height: 135,
+            width: "90%",
+            justifyContent: 'center',
+            top: 55,
+        },
+        
+})
 
+export const SessoesScreenStyle = StyleSheet.create({
+    background: {
+        backgroundColor: '#1c1c1e',
+        flex:1,
+    },
+    Title:{
+        color: "#fff",
+        fontSize: 35,
+        fontWeight:"100",
+        marginTop:10,
+        marginLeft:15,
+        marginBottom:13
+    },
+    SubTitile:{
+        display:"flex",
+        flexDirection:"row",
+        gap:25,
+        color:"#fff",
+        fontSize:18,
+        fontWeight:"100",
+        marginLeft:8,
+        marginBottom:10
+    },
+    NormalText:{
+        color:"#fff",
+        fontSize:15,
+        fontWeight:"100",
+        marginLeft:15,
+        marginBottom:5
+    }
 })
