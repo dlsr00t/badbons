@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 
 
-const Card = ({ Height = 135, Title, Percentage, children }) =>{
+const Card = ({ Height = 135, Title, Percentage, TitleAlign = false, children, }) =>{
     const styles = StyleSheet.create({
         cardStyle:{
             alignSelf: 'center',
@@ -12,7 +12,7 @@ const Card = ({ Height = 135, Title, Percentage, children }) =>{
             height: Height,
             width: "90%",
             justifyContent: 'space-around',
-            top: 70,
+
         },
         cardTitle:{
             color: "#fff",
@@ -20,6 +20,7 @@ const Card = ({ Height = 135, Title, Percentage, children }) =>{
             fontWeight: "bold",
             marginTop: 10,
             marginLeft:15,
+            
         },
 
     

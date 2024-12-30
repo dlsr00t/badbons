@@ -62,10 +62,8 @@ const Home = () => {
       footerText: {
         color: "#fff",
       },
-      borda:{
-        borderBlockColor:"red",
-        borderColor:"yellow",
-        borderWidth:"10"
+      margem:{
+        marginTop:70
       },
       text1:{
         color:"white",
@@ -129,8 +127,8 @@ const Home = () => {
               </LinearGradient>
             </View>
 
-            <View>
-              <Card style={styles.borda} Title= "Progresso Atual" Percentage={<CircularProgressBar percentage={40}/>} Height= {170} >
+            <View style={styles.margem}>
+              <Card Title= "Progresso Atual" Percentage={<CircularProgressBar percentage={40}/>} Height= {170} >
                  <Text style={styles.text1}>nível iniciante</Text> 
                  <Text style={styles.text2}>Sessões: 0/11</Text>
                  <Text style={styles.text3}>Ver mais</Text>

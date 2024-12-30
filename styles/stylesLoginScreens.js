@@ -256,6 +256,6 @@ export const SessoesScreenStyle = StyleSheet.create({
         fontSize:15,
         fontWeight:"100",
         marginLeft:15,
-        marginBottom:5
+
     }
 })
