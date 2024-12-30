@@ -9,6 +9,7 @@ export const InitialScreen = ({ navigation }) => {
     // Função para verificar o status de login ao iniciar o Dashboard
     const checkLoginStatus = async () => {
         try {
+            navigation.navigate('HomeTabs')
             const isLoggedIn = await AsyncStorage.getItem("isLoggedIn");
 
             // Se o usuário já está logado, redireciona para a tela "Home"
