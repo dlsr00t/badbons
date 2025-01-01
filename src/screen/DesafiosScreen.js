@@ -2,7 +2,7 @@ import React from "react";
 import { View, SafeAreaView, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { estilo2 } from "../../styles/stylesLoginScreens";
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import { DesafiosScreenStyle } from "../../styles/stylesLoginScreens"
+import { DesafiosScreenStyle } from "../../styles/stylesLoginScreens";
 import Card from "../components/card";
 import { FullStar } from "../../assets/star-solid-24.png";
 

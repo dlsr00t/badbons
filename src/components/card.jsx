@@ -4,13 +4,14 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 
 
-const Card = ({ Height = 135, Title, Percentage, customStyle, children, }) =>{
+const Card = ({ Height = 135, Width="90%", Title, Percentage, customStyle, children}) =>{
     const styles = StyleSheet.create({
         cardStyle:{
+            display:"flex",
             alignSelf: 'center',
             borderRadius: 25,
             height: Height,
-            width: "90%",
+            width: Width,
             justifyContent: 'space-around',
 
         },
@@ -26,7 +27,7 @@ const Card = ({ Height = 135, Title, Percentage, customStyle, children, }) =>{
     });
     
     return(
-        <View>
+        <View style={{display:"flex"}}>
             <LinearGradient
                 start={{x:0, y:0}}
                 end={{x:1, y:0}}

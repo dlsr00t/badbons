@@ -22,7 +22,7 @@ const Tab = createBottomTabNavigator();
 export const TabNavigate = () => {
     return (
         <Tab.Navigator
-            initialRouteName='Desafios'
+            initialRouteName='Perfil'
             screenOptions={{
                 tabBarActiveTintColor: "#ccc",
                 tabBarStyle: { backgroundColor: 'rgb(28,28,30)' },

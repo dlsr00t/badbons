@@ -294,6 +294,12 @@ export const RankingScreenStyle = StyleSheet.create({
     FlexingStats:{
         display:'flex',
         flexDirection:"row",
+
+    },
+    FloatingDot:{
+        display:"flex",
+        
+        backgroundColor:"rgb(0,100,255)"
     }
 })
 

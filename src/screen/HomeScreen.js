@@ -3,9 +3,8 @@ import { ScrollView, View, SafeAreaView, Text, TouchableOpacity, TextInput, Styl
 import { HomeScreen } from "../../styles/stylesLoginScreens";
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { LinearGradient } from 'expo-linear-gradient';
-import CircularProgressBar from "../components/porcentagem";
+import { CircularProgressBar } from "../components/porcentagem";
 import Card from "../components/card"
-import Container from "../components/teste";
 import { transform } from "@babel/core";
 
 const Home = () => {
