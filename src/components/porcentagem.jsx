@@ -61,6 +61,71 @@ export const CircularProgressBar = ({ percentage }) => {
 };
 
 
+export const CircularStats = ({ stats1, stats2 }) => {
+  const radius = 50; // Raio do círculo
+  const strokeWidth = 3; // Largura do traço
+  const normalizedRadius = radius - strokeWidth / 2; // Raio ajustado
+  const circumference = normalizedRadius * 2 * Math.PI; // Circunferência do círculo
+
+  // Cálculo correto do deslocamento com ponto inicial no topo
+  const percentage = 100
+  const strokeDashoffset = circumference - (percentage / 100) * circumference;
+
+  const styles = StyleSheet.create({
+    container: {
+      display:"flex",
+      flexWrap:"wrap",
+      height: 120,
+      width: 120,
+    },
+  });
+
+  return (
+    <View style={styles.container}>
+      <Svg height={radius * 2} width={radius * 2} style={{display:"flex", flexWrap:"wrap" }}>
+        {/* Círculo de Fundo */}
+        <Circle
+          stroke="#439cc6"
+          fill="none"
+          cx={radius}
+          cy={radius}
+          r={normalizedRadius}
+          strokeWidth={strokeWidth}
+        />
+        {/* Círculo de Progresso */}
+        <Circle
+          stroke="##439cc6" // Cor do progresso
+          fill="none"
+          cx={radius}
+          cy={radius}
+          r={normalizedRadius}
+          strokeWidth={strokeWidth}
+          strokeDasharray={circumference}
+          strokeDashoffset={strokeDashoffset}
+          strokeLinecap="round"
+          transform={`rotate(-90 ${radius} ${radius})`} // Ajuste para começar no topo
+        />
+        {/* Texto de Percentagem */}
+        <SvgText
+          fill="#fff"
+          fontSize="20"
+          x={radius}
+          y={radius - 5} // Alinhamento vertical
+          textAnchor="middle"
+          
+        >
+          <tspan x={radius} dy="0" style={{fontWeight:"bold"}}> {/* First Line */}
+            {stats1}
+          </tspan>
+          <tspan x={radius} dy="20"> {/* Second Line */}
+            {stats2}
+          </tspan>
+        </SvgText>
+      </Svg>
+    </View>
+  );
+};
+
 
 export const StraightProgressBar = ({ percentage, customStyle }) => {
 

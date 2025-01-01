@@ -334,3 +334,10 @@ export const DesafiosScreenStyle = StyleSheet.create({
         
     }
 })
+
+export const PerfilScreenStyle = StyleSheet.create({
+    background: {
+        backgroundColor: '#1c1c1e',
+        flex:1,
+    },
+})
