@@ -7,6 +7,13 @@ import Card from "../components/card";
 import { FullStar } from "../../assets/star-solid-24.png";
 
 
+{/*
+    //!THIS COMMENT IS JUST A TO-DO SECTION.
+
+    //TODO - Turn Challenge levels into clickable buttons    
+*/}
+
+
 
 const DesafiosScreen = () => {
     const styles = StyleSheet.create({

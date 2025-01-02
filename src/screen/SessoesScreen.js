@@ -7,6 +7,13 @@ import Card from "../components/card";
 import { FullStar } from "../../assets/star-solid-24.png";
 
 
+{/*
+    //!THIS COMMENT IS JUST A TO-DO SECTION.
+    
+    //TODO - Turn Sessions levels into clickable buttons
+    //TODO - Change Sessions css cards to look like Challenge cards
+*/}
+
 
 const SessoesScreen = () => {
     const styles = StyleSheet.create({

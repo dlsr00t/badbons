@@ -7,6 +7,13 @@ import { CircularProgressBar } from "../components/porcentagem";
 import Card from "../components/card"
 import { transform } from "@babel/core";
 
+{/* 
+  //!THIS COMMENT IS JUST A TO-DO SECTION.
+  
+  // TODO - Turn "Ver mais" into clickable button
+*/}
+
+
 const Home = () => {
     const styles = StyleSheet.create({
 

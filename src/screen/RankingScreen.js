@@ -7,6 +7,14 @@ import { transform } from "@babel/core";
 import User from "../../assets/user-circle-regular-72.png";
 import { Button, Badge } from "react-native-elements"
 
+
+{/*
+    //!THIS COMMENT IS JUST A TO-DO SECTION.
+    
+    //TODO - Turn "MARCAR JOGO" into a clickable button
+*/}
+
+
 const RankingScreen = () => {
     const style = StyleSheet.create({
         position:{

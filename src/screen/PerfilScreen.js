@@ -6,6 +6,14 @@ import User from "../../assets/user-circle-regular-132.png";
 import { CircularStats } from "../components/porcentagem";
 
 
+{/*
+    //!THIS COMMENT IS JUST A TO-DO SECTION.
+    
+    //TODO - Make the Settings button
+    //TODO - Make the Share Profile button
+*/}
+
+
 const PerfilScreen = () => {
     const stats = [
         { value: 0, label: 'vitórias' },
