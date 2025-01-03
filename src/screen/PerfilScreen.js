@@ -9,8 +9,8 @@ import { CircularStats } from "../components/porcentagem";
 {/*
     //!THIS COMMENT IS JUST A TO-DO SECTION.
     
-    //TODO - Make the Settings button
-    //TODO - Make the Share Profile button
+    //TODO - Make the Settings button []
+    //TODO - Make the Share Profile button []
 */}
 
 

@@ -10,7 +10,7 @@ import { FullStar } from "../../assets/star-solid-24.png";
 {/*
     //!THIS COMMENT IS JUST A TO-DO SECTION.
 
-    //TODO - Turn Challenge levels into clickable buttons    
+    //TODO - Turn Challenge levels into clickable buttons []
 */}
 
 

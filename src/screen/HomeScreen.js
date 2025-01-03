@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, View, SafeAreaView, Text, TouchableOpacity, TextInput, StyleSheet } from "react-native";
+import { ScrollView, View, SafeAreaView, Text, TouchableOpacity, TextInput, StyleSheet, Touchable } from "react-native";
 import { HomeScreen } from "../../styles/stylesLoginScreens";
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -10,7 +10,10 @@ import { transform } from "@babel/core";
 {/* 
   //!THIS COMMENT IS JUST A TO-DO SECTION.
   
-  // TODO - Turn "Ver mais" into clickable button
+  // TODO - Turn "Ver mais" into clickable button [x]
+  // TODO - Add resposiveness to "Progresso atual" Card []
+
+
 */}
 
 
@@ -137,7 +140,7 @@ const Home = () => {
               <Card Title= "Progresso Atual" Percentage={<CircularProgressBar percentage={40}/>} Height= {170} >
                  <Text style={styles.text1}>nível iniciante</Text> 
                  <Text style={styles.text2}>Sessões: 0/11</Text>
-                 <Text style={styles.text3}>Ver mais</Text>
+                 <TouchableOpacity><Text style={styles.text3}>Ver mais</Text></TouchableOpacity>
               </Card>
             </View>
             

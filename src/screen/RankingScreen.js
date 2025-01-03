@@ -11,7 +11,7 @@ import { Button, Badge } from "react-native-elements"
 {/*
     //!THIS COMMENT IS JUST A TO-DO SECTION.
     
-    //TODO - Turn "MARCAR JOGO" into a clickable button
+    //TODO - Turn "MARCAR JOGO" into a clickable button []
 */}
 
 
