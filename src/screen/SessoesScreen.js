@@ -68,27 +68,27 @@ const SessoesScreen = () => {
             <View style={styles.containerSessions}>
                 <Text style={SessoesScreenStyle.NormalText}>Escolha seu objetivo</Text>
                 <View style={{display:"flex", gap:30,alignContent:"space-between", marginTop:10}}>
-                    <Card Title={"EMPUNHADURAS BÁSICAS"} >
+                    <Card Title={"EMPUNHADURAS BÁSICAS"} customStyle={{marginTop:35}}>
                         <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
                         
                         <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
                         <Image style={styles.star3condition} source={require("../../assets/star-regular-24.png")}></Image>
-                        <Text style={SessoesScreenStyle.NormalText}>5 EXERCICIOS</Text>
+                        <Text style={[SessoesScreenStyle.NormalText, {transform:[{translateY:-20}]}]}>5 EXERCICIOS</Text>
                     </Card>
 
-                    <Card Title={"SAQUES BÁSICOS"}>
+                    <Card Title={"SAQUES BÁSICOS"} customStyle={{marginTop:35}}>
                         <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
                         <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
                         <Image style={styles.star3condition} source={require("../../assets/star-regular-24.png")}></Image>
-                        <Text style={SessoesScreenStyle.NormalText}>2 EXERCICIOS</Text>
+                        <Text style={[SessoesScreenStyle.NormalText, {transform:[{translateY:-20}]}]}>2 EXERCICIOS</Text>
                     </Card>
 
-                    <Card Title={"GOLPES BÁSICOS"}>
+                    <Card Title={"GOLPES BÁSICOS"} customStyle={{marginTop:35}}>
                         <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
                         
                         <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
                         <Image style={styles.star3condition} source={require("../../assets/star-regular-24.png")}></Image>
-                        <Text style={SessoesScreenStyle.NormalText}>4 EXERCICIOS</Text>
+                        <Text style={[SessoesScreenStyle.NormalText, {transform:[{translateY:-20}]}]}>4 EXERCICIOS</Text>
                     </Card>
                 </View>
             </View>

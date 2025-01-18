@@ -22,7 +22,7 @@ const Tab = createBottomTabNavigator();
 export const TabNavigate = () => {
     return (
         <Tab.Navigator
-            initialRouteName='Home'
+            initialRouteName='Desafios'
             screenOptions={{
                 tabBarActiveTintColor: "#ccc",
                 tabBarStyle: { backgroundColor: 'rgb(28,28,30)' },
@@ -75,7 +75,8 @@ export const TabNavigate = () => {
 // Navegação por pilha (Stack)
 export const StackNavigate = () => {
     return (
-        <Stack.Navigator initialRouteName='Initial'>
+        //!Switch the initialRouteName to "Initial" tô get things back to normal.
+        <Stack.Navigator initialRouteName='HomeTabs'>
             <Stack.Screen
                 name='Initial'
                 component={InitialScreen}

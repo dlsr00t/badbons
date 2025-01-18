@@ -4,7 +4,7 @@ import { PerfilScreenStyle } from "../../styles/stylesLoginScreens";
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import User from "../../assets/user-circle-regular-132.png";
 import { CircularStats } from "../components/porcentagem";
-
+import Settings from "../../assets/3-pontos.png"
 
 {/*
     //!THIS COMMENT IS JUST A TO-DO SECTION.
@@ -56,6 +56,11 @@ const PerfilScreen = () => {
     return (
         <SafeAreaView style={[PerfilScreenStyle.background, {display:"flex", alignItems:"center"}]}>
             <View style={{display:"flex", justifyContent:"space-between", alignContent:"space-between"}}>
+                <View style={{display:"flex", alignItems:"flex-end"}}>
+                   <TouchableOpacity>
+                        <Image style={{display:"flex",tintColor:"#fff",left:20}} source={ Settings }/>
+                   </TouchableOpacity>
+                </View>
                 <View style={{display:"flex", alignItems:"center"}}>
                     <Image style={{display:"flex",tintColor:"#fff"}} source={User}/>
                 
