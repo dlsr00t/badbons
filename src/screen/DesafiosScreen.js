@@ -60,35 +60,51 @@ const DesafiosScreen = () => {
             </View>
             
             <View style={DesafiosScreenStyle.SubTitile} >
-                <Text style={DesafiosScreenStyle.SubTitile}>Iniciante</Text>
-                <Text style={DesafiosScreenStyle.SubTitile}>Intermediário</Text>
-                <Text style={DesafiosScreenStyle.SubTitile}>Avançado</Text>
+
+                <TouchableOpacity>
+                    <Text style={DesafiosScreenStyle.SubTitile}>Iniciante</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
+                    <Text style={DesafiosScreenStyle.SubTitile}>Intermediário</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
+                    <Text style={DesafiosScreenStyle.SubTitile}>Avançado</Text>
+                </TouchableOpacity>
+
             </View>
 
             <View style={styles.containerSessions}>
                 <Text style={DesafiosScreenStyle.NormalText}>Escolha seu Desafio</Text>
                 <View style={{display:"flex", gap:30,alignContent:"space-between", marginTop:10}}>
-                    <Card Title={"Smash"} customStyle={{marginTop:35}}>
-                        <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
-                        <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
-                        <Image style={styles.star3condition} source={require("../../assets/star-regular-24.png")}></Image>
-                        <Text style={[DesafiosScreenStyle.NormalText, {transform:[{translateY:-20}]}]}>1 ponto</Text>
-                    </Card>
+                    <TouchableOpacity>
+                        <Card Title={"Smash"} customStyle={{marginTop:35}}>
+                            <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
+                            <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
+                            <Image style={styles.star3condition} source={require("../../assets/star-regular-24.png")}></Image>
+                            <Text style={[DesafiosScreenStyle.NormalText, {transform:[{translateY:-20}]}]}>1 ponto</Text>
+                        </Card>
+                    </TouchableOpacity>
 
-                    <Card Title={"Drive"} customStyle={{marginTop:35}}>
-                        <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
-                        <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
-                        <Image style={styles.star3condition} source={require("../../assets/star-regular-24.png")}></Image>
-                        <Text style={[DesafiosScreenStyle.NormalText, {transform:[{translateY:-20}]}]}>2 pontos</Text>
-                    </Card>
+                    <TouchableOpacity>
+                        <Card Title={"Drive"} customStyle={{marginTop:35}}>
+                            <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
+                            <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
+                            <Image style={styles.star3condition} source={require("../../assets/star-regular-24.png")}></Image>
+                            <Text style={[DesafiosScreenStyle.NormalText, {transform:[{translateY:-20}]}]}>2 pontos</Text>
+                        </Card>
+                    </TouchableOpacity>
 
-                    <Card Title={"Drop"} customStyle={{marginTop:35}}>
-                        <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
-                        
-                        <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
-                        <Image style={styles.star3condition} source={require("../../assets/star-regular-24.png")}></Image>
-                        <Text style={[DesafiosScreenStyle.NormalText, {transform:[{translateY:-20}]}]}>3 pontos</Text>
-                    </Card>
+                    <TouchableOpacity>
+                        <Card Title={"Drop"} customStyle={{marginTop:35}}>
+                            <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
+                            
+                            <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
+                            <Image style={styles.star3condition} source={require("../../assets/star-regular-24.png")}></Image>
+                            <Text style={[DesafiosScreenStyle.NormalText, {transform:[{translateY:-20}]}]}>3 pontos</Text>
+                        </Card>
+                    </TouchableOpacity>
                 </View>
             </View>
         </SafeAreaView>
