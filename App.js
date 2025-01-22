@@ -14,6 +14,7 @@ import SessoesScreen from './src/screen/SessoesScreen';
 import RankingScreen from './src/screen/RankingScreen';
 import DesafiosScreen from './src/screen/DesafiosScreen';
 import PerfilScreen from './src/screen/PerfilScreen';
+import SmashScreen from './src/screen/SmashScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -91,6 +92,12 @@ export const StackNavigate = () => {
                 name='HomeTabs'
                 component={TabNavigate}  // Navegação por abas
                 options={{ headerShown: false }}
+            />
+
+            <Stack.Screen
+                name="Smash"
+                component={SmashScreen}
+                options={{headerShown:false}}
             />
         </Stack.Navigator>
     );

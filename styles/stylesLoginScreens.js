@@ -1,5 +1,5 @@
-import { transform } from "@babel/core"
-import { StyleSheet } from "react-native"
+import { transform } from "@babel/core";
+import { StyleSheet } from "react-native";
 import DesafiosScreen from "../src/screen/DesafiosScreen"
 
 export const estilo = StyleSheet.create({
@@ -341,3 +341,75 @@ export const PerfilScreenStyle = StyleSheet.create({
         flex:1,
     },
 })
+
+export const SmashScreenStyle = StyleSheet.create({
+    background: {
+        backgroundColor: '#1c1c1e',
+        flex:1,
+    },
+    Title:{
+        color: "#fff",
+        fontSize: 28,
+        fontWeight:"bold",
+        marginTop:10,
+        marginLeft:15,
+        marginBottom:13
+    },
+    SubTitile:{
+        display:"flex",
+        flexDirection:"row",
+        gap:25,
+        color:"#fff",
+        fontSize:18,
+        fontWeight:"Bold",
+        marginLeft:8,
+        marginTop:70
+
+    },
+    NormalText:{
+        display:"flex",
+        color:"#fff",
+        fontSize:15,
+        fontWeight:"100",
+        marginLeft:15,
+        marginRight:15,
+        alignSelf:"center"
+        
+    },
+    Apendice:{
+        display:"flex",
+        alignItems:"flex-start",
+        alignSelf:"flex-start",
+        flexDirection:"row",
+        flexWrap:"wrap",
+        marginTop:30,
+
+
+    },
+    finalButtons:{
+        display:"flex",
+        flexDirection:"row",
+        marginTop:20,
+        alignItems:"center",
+        marginLeft:15,
+        marginRight:15,
+    },
+    startButton:{
+        display:"flex",
+        backgroundColor:"rgb(29,0,158)",
+        padding:20,
+        borderRadius:20,
+        flexGrow:4,
+        marginRight:5
+        
+    },
+    favoriteButton:{
+        backgroundColor:"rgb(29,0,158)",
+        borderRadius:20,
+        padding:12
+
+    },
+
+
+})
+

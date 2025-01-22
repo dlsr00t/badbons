@@ -11,11 +11,12 @@ import { FullStar } from "../../assets/star-solid-24.png";
     //!THIS COMMENT IS JUST A TO-DO SECTION.
 
     //TODO - Turn Challenge levels into clickable buttons []
+    
 */}
 
 
 
-const DesafiosScreen = () => {
+const DesafiosScreen = ({navigation}) => {
     const styles = StyleSheet.create({
         star1condition:{
             transform:[{translateX:10}, {translateY:-90}, {scale:0.5}],
@@ -78,7 +79,7 @@ const DesafiosScreen = () => {
             <View style={styles.containerSessions}>
                 <Text style={DesafiosScreenStyle.NormalText}>Escolha seu Desafio</Text>
                 <View style={{display:"flex", gap:30,alignContent:"space-between", marginTop:10}}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Smash')}>
                         <Card Title={"Smash"} customStyle={{marginTop:35}}>
                             <Image style={styles.star1condition} source={require("../../assets/star-solid-24.png")}></Image>
                             <Image style={styles.star2condition} source={require("../../assets/star-regular-24.png")}></Image>
