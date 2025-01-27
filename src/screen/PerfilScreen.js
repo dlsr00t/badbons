@@ -14,7 +14,7 @@ import Settings from "../../assets/3-pontos.png"
 */}
 
 
-const PerfilScreen = () => {
+const PerfilScreen = ({ navigation }) => {
     const stats = [
         { value: 0, label: 'vitórias' },
         { value: 0, label: 'derrotas' },
@@ -57,8 +57,8 @@ const PerfilScreen = () => {
         <SafeAreaView style={[PerfilScreenStyle.background, {display:"flex", alignItems:"center"}]}>
             <View style={{display:"flex", justifyContent:"space-between", alignContent:"space-between"}}>
                 <View style={{display:"flex", alignItems:"flex-end"}}>
-                   <TouchableOpacity>
-                        <Image style={{display:"flex",tintColor:"#fff",left:20}} source={ Settings }/>
+                   <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
+                        <Image style={{display:"flex",tintColor:"#fff",left:20}} source={ Settings } />
                    </TouchableOpacity>
                 </View>
                 <View style={{display:"flex", alignItems:"center"}}>

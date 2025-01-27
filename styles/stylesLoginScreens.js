@@ -384,7 +384,6 @@ export const SmashScreenStyle = StyleSheet.create({
         flexWrap:"wrap",
         marginTop:30,
 
-
     },
     finalButtons:{
         display:"flex",

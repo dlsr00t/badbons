@@ -15,6 +15,8 @@ import RankingScreen from './src/screen/RankingScreen';
 import DesafiosScreen from './src/screen/DesafiosScreen';
 import PerfilScreen from './src/screen/PerfilScreen';
 import SmashScreen from './src/screen/SmashScreen';
+import { SettingsScreen } from './src/screen/SettingsScreen';
+
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -83,6 +85,7 @@ export const StackNavigate = () => {
                 component={InitialScreen}
                 options={{ headerShown: false }}
             />
+
             <Stack.Screen
                 name='Login'
                 component={LoginScreen}  // Uso correto de LoginScreen
@@ -97,7 +100,21 @@ export const StackNavigate = () => {
             <Stack.Screen
                 name="Smash"
                 component={SmashScreen}
-                options={{headerShown:false}}
+                options={{
+                    headerTransparent:true,
+                    headerTintColor:"white",
+                    headerTitle:""
+                }}
+            />
+
+            <Stack.Screen
+                name="Settings"
+                component={SettingsScreen}
+                options={{
+                    headerTransparent:true,
+                    headerTintColor:"white",
+                    headerTitle:"Configurações"
+                }}
             />
         </Stack.Navigator>
     );
