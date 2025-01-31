@@ -25,7 +25,7 @@ const Tab = createBottomTabNavigator();
 export const TabNavigate = () => {
     return (
         <Tab.Navigator
-            initialRouteName='Desafios'
+            initialRouteName='Home'
             screenOptions={{
                 tabBarActiveTintColor: "#ccc",
                 tabBarStyle: { backgroundColor: 'rgb(28,28,30)' },
@@ -90,6 +90,7 @@ export const StackNavigate = () => {
                 name='Login'
                 component={LoginScreen}  // Uso correto de LoginScreen
                 options={{ headerShown: false }}
+                style={{backgroundColor:"red"}}
             />
             <Stack.Screen
                 name='HomeTabs'

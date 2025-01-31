@@ -1,11 +1,14 @@
-import React from "react";
-import { ScrollView, View, SafeAreaView, Text, TouchableOpacity, TextInput, StyleSheet, Touchable } from "react-native";
+import React, { useEffect, useState } from 'react';
+import { ScrollView, View, SafeAreaView, Text, TouchableOpacity, TextInput, StyleSheet, Touchable, Button } from "react-native";
 import { HomeScreen } from "../../styles/stylesLoginScreens";
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { LinearGradient } from 'expo-linear-gradient';
 import { CircularProgressBar } from "../components/porcentagem";
 import Card from "../components/card"
 import { transform } from "@babel/core";
+import { saveUserToken, getUserToken, removeData } from '../services/storage/storage';
+import { STORAGE_KEYS } from '../services/storage/constants';
+
 
 {/* 
   //!THIS COMMENT IS JUST A TO-DO SECTION.
@@ -96,6 +99,29 @@ const Home = () => {
       }
     });
   
+    const [token, setToken] = useState(null);
+
+    useEffect(() => {
+      const fetchToken = async () => {
+        const userToken = await getUserToken();
+        setToken(userToken);
+      };
+      fetchToken();
+    }, []);
+
+    const handleSaveToken = async () => {
+      await saveUserToken('12345');
+      setToken('12345');
+    };
+
+    const handleRemoveToken = async () => {
+      await removeData(STORAGE_KEYS.USER_TOKEN);
+      setToken(null);
+    };
+  
+  
+
+
     return (
         <SafeAreaView style={HomeScreen.background}>
             <View style={HomeScreen.BuscaConatainer}>
@@ -144,6 +170,13 @@ const Home = () => {
               </Card>
             </View>
             
+            <View>
+              <Text>Token: {token || 'Nenhum token salvo'}</Text>
+              <Button title="Salvar Token" onPress={handleSaveToken} />
+              <Button title="Remover Token" onPress={handleRemoveToken} />
+            </View>
+
+
             {/*
             <Container>
               <Text style={{color:"red"}}>Hello, World</Text>

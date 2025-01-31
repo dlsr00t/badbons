@@ -48,7 +48,7 @@ const LoginScreen = ({ navigation }) => {
         colors={['#4376e6', '#0233a1']}
         style={loginScreen.linearGradient}
       >
-        <TouchableOpacity style={loginScreen.button} onPress={()=>navigation.navigate("HomeTabs")}>
+        <TouchableOpacity style={loginScreen.button} onPress={()=>{navigation.navigate("HomeTabs"); console.log(email)}}>
           <Text style={{fontWeight:"bold",alignItems:"center",color:"white",fontSize:22}}>Entrar</Text>
         </TouchableOpacity>
       </LinearGradient>
