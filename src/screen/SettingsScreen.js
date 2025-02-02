@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image } from "react-native";
-import { CheckBox } from '@rneui/themed';
-
+import { adminToken } from "../services/api/requestAdmin";
 
 
 export const SettingsScreen = () => {
@@ -16,9 +15,22 @@ const styles = StyleSheet.create({
     },
     section: {
         marginBottom: 24,
-        marginTop:70
+        marginTop:70,
 
     },
+    admSection:{
+        display:"flex",
+        justifyContent:"center",
+        alignSelf:"center",
+        marginBottom: 24,
+        marginTop:70,
+        borderWidth:1,
+        borderColor:"white",
+        borderRadius:10,
+
+
+    },
+
     sectionTitle: {
         color: "#888",
         fontSize: 12,
@@ -219,6 +231,13 @@ const styles = StyleSheet.create({
                     </TouchableOpacity>
                 </View>
 
+                <View style={[styles.divisor, {marginVertical:0}]}/>
+
+                <View style={[styles.admSection, {marginTop:36}]}>
+                    <TouchableOpacity style={{padding:10}} onPress={adminToken}>
+                        <Text style={{color:"white"}}>ADM</Text>
+                    </TouchableOpacity>
+                </View>
         </ScrollView>
         );
     }
